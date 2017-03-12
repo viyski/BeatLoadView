@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical">
+
+        <com.gm.load.widget.BeatLoadView
+            android:id="@+id/beat_view"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_margin="12dp"
+            app:paintColor="@android:color/holo_orange_light" />
+
+        <Button
+            android:id="@+id/run_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="run" />
+
+    </LinearLayout>
+
+    <com.gm.load.widget.RBeatLoadView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>
